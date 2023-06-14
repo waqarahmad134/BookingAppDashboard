@@ -27,6 +27,7 @@ Route::get('/clear', function () {
 });
 
 Route::get('/', [App\Http\Controllers\HomeController::class, 'home'])->name('home');
+Route::get('users', [App\Http\Controllers\HomeController::class, 'users'])->name('users');
 
 
 
