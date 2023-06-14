@@ -28,6 +28,11 @@ Route::get('/clear', function () {
 
 Route::get('/', [App\Http\Controllers\HomeController::class, 'home'])->name('home');
 Route::get('users', [App\Http\Controllers\HomeController::class, 'users'])->name('users');
+Route::get('partners', [App\Http\Controllers\HomeController::class, 'partners'])->name('partners');
+Route::get('drivers', [App\Http\Controllers\HomeController::class, 'drivers'])->name('drivers');
+Route::get('vehicles', [App\Http\Controllers\HomeController::class, 'vehicles'])->name('vehicles');
+Route::get('bookings', [App\Http\Controllers\HomeController::class, 'bookings'])->name('bookings');
+Route::get('extras', [App\Http\Controllers\HomeController::class, 'extras'])->name('extras');
 
 
 
