@@ -13,6 +13,20 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+
+//Clear Cache facade value:
+Route::get('/clear', function () {
+    $exitCode = Artisan::call('cache:clear');
+    $exitCode = Artisan::call('optimize');
+    $exitCode = Artisan::call('route:cache');
+    $exitCode = Artisan::call('route:clear');
+    $exitCode = Artisan::call('view:clear');
+    $exitCode = Artisan::call('config:cache');
+    $exitCode = Artisan::call('config:clear');
+    return '<h1>Cache facade value cleared</h1>';
 });
+
+Route::get('/', [App\Http\Controllers\HomeController::class, 'home'])->name('home');
+
+
+
