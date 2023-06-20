@@ -97,62 +97,51 @@
 
     <!-- Table Start -->
     <div class="container-fluid pt-4 px-4">
-        <div class="row g-4">
-            <div class="col-12">
+        <div class="row g-4 ">
+            <div class="col-sm-12 col-xl-6">
                 <div class="bg-secondary rounded h-100 p-4">
-                    <h6 class="mb-4">Extras</h6>
-                    <div class="table-responsive">
-                        <table class="table  table-hover">
-                            <thead>
-                                <tr>
-                                    <th scope="col">#</th>
-                                    <th scope="col">First Name</th>
-                                    <th scope="col">Last Name</th>
-                                    <th scope="col">Email</th>
-                                    <th scope="col">Country</th>
-                                    <th scope="col">ZIP</th>
-                                    <th scope="col">Status</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td>John</td>
-                                    <td>Doe</td>
-                                    <td>jhon@email.com</td>
-                                    <td>USA</td>
-                                    <td>123</td>
-                                    <td>Member</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">2</th>
-                                    <td>Mark</td>
-                                    <td>Otto</td>
-                                    <td>mark@email.com</td>
-                                    <td>UK</td>
-                                    <td>456</td>
-                                    <td>Member</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">3</th>
-                                    <td>Jacob</td>
-                                    <td>Thornton</td>
-                                    <td>jacob@email.com</td>
-                                    <td>AU</td>
-                                    <td>789</td>
-                                    <td>Member</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
+                    <h6 class="mb-4">Add Partner</h6>
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Phone</label>
+                            <input type="tel" class="form-control" id="phone">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="partnerid" class="form-label">Partner ID</label>
+                            <input type="text" class="form-control" id="partnerid">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Add Partner</button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-sm-12 col-xl-6">
+                <div class="bg-secondary rounded h-100 p-4 d-flex h-100 align-items-center">
+                    <img class="img-fluid" src="{{asset('partner.png')}}" alt="">
                 </div>
             </div>
         </div>
     </div>
-
     <!-- Table End -->
 
     <!-- Content End -->
 
 
-@endsection
+    @endsection

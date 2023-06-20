@@ -18,6 +18,10 @@ class HomeController extends Controller
     {
         return view('partners');
     }
+    public function addPartners()
+    {
+        return view('addPartners');
+    }
     public function drivers()
     {
         return view('drivers');
@@ -33,5 +37,21 @@ class HomeController extends Controller
     public function extras()
     {
         return view('extras');
+    }
+
+
+    public function signin()
+    {
+        return view('auth/signin');
+    }
+
+    public function signup()
+    {
+        return view('auth/signup');
+    }
+
+    public function logout()
+    {
+        return view('auth/signin');
     }
 }

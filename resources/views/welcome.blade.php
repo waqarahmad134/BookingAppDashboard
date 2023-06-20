@@ -67,6 +67,8 @@
                     <a href="{{route('vehicles')}}" class="nav-item nav-link"><i class="fa fa-chart-bar me-2"></i>Vehicles</a>
                     <a href="{{route('bookings')}}" class="nav-item nav-link"><i class="fa fa-chart-bar me-2"></i>Bookings</a>
                     <a href="{{route('extras')}}" class="nav-item nav-link"><i class="fa fa-chart-bar me-2"></i>Extras</a>
+                    <a href="{{route('addPartners')}}" class="nav-item nav-link"><i class="fa fa-chart-bar me-2"></i>Add Partners</a>
+                    <a href="{{route('logout')}}" class="nav-item nav-link"><i class="fa fa-chart-bar me-2"></i>Logout</a>
                     <!-- <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="far fa-file-alt me-2"></i>Pages</a>
                         <div class="dropdown-menu bg-transparent border-0">
